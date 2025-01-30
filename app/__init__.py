@@ -10,7 +10,7 @@ def create_app():
     
     # Configure the Flask app
     app.config['SECRET_KEY'] = 'your-secret-key'  # Change this in production
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///nba_rankings.db'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///nba.db'  # This creates a file named nba.db in your instance folder
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     # Initialize the database with the app
